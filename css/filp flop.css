@@ -103,6 +103,13 @@ header {
     text-decoration: underline;
 }
 
+#log-icon {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-left: -8px;
+}
+
 .nav-icons {
     display: flex;
     gap: 20px;

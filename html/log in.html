@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Lune & Linen</title>
+<link rel="stylesheet" href="../css/log in.css">
+   </head>
+<body>
+
+  <form id="loginForm">
+    <h2>Login</h2>
+    <input type="text" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    
+    <div class="extra">
+      <label><input type="checkbox" id="showPassword" /> Show Password</label>
+      <label><input type="checkbox" id="rememberMe" /> Remember Me</label>
+    </div>
+    
+    <button type="submit">Login</button>
+    <div class="message" id="message"></div>
+  </form>
+
+  <script>
+    const emailField = document.getElementById("email");
+    const passwordField = document.getElementById("password");
+    const showPassword = document.getElementById("showPassword");
+    const rememberMe = document.getElementById("rememberMe");
+    const message = document.getElementById("message");
+
+    window.onload = function() {
+      const rememberedEmail = localStorage.getItem("rememberedEmail");
+      if (rememberedEmail) {
+        emailField.value = rememberedEmail;
+        rememberMe.checked = true;
+      }
+    };
+
+    showPassword.addEventListener("change", function() {
+      passwordField.type = this.checked ? "text" : "password";
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = emailField.value.trim().toLowerCase();
+      const password = passwordField.value.trim();
+
+      const correctEmail = "user@example.com";
+      const correctPassword = "abc123";
+
+      console.log("Checking login with:", email, password);
+
+      if (email === correctEmail && password === correctPassword) {
+        message.style.color = "green";
+        message.textContent = "Login successful! Redirecting...";
+
+        localStorage.setItem("loggedInUser", email);
+
+        if (rememberMe.checked) {
+          localStorage.setItem("rememberedEmail", email);
+        } else {
+          localStorage.removeItem("rememberedEmail");
+        }
+
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1500);
+      } else {
+        message.style.color = "red";
+        message.textContent = "Invalid email or password.";
+      }
+    });
+  </script>
+
+</body>
+</html>

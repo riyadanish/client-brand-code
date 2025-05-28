@@ -112,6 +112,13 @@ header {
     margin-top: -260px;
 }
 
+#log-icon {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-left: -8px;
+}
+
 #icon2 {
     display: none;
 }

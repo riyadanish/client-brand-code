@@ -76,6 +76,13 @@ header {
     margin-left: 150px;
 }
 
+#log-icon {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-left: -8px;
+}
+
 .nav-links {
     display: flex;
     flex-wrap: wrap;

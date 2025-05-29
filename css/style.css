@@ -18,6 +18,8 @@ body {
     margin-left: 90px;
 }
 
+
+
 #log-icon {
     text-decoration: none;
     color: white;
@@ -642,43 +644,146 @@ header {
 
 #img-p1 {
     margin-top: 210px;
+    color: black;
+    text-decoration: none;
 }
 
-#img-arow {
-    margin-left: 90px;
-    position: absolute;
-    top: 2195px;
-    z-index: 10;
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
 }
 
-#img-arow1 {
-    margin-left: 70px;
-    position: absolute;
-    top: 2195px;
+.popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 1000;
+    border-radius: 10px;
+    display: none;
 }
 
-#img-arow2 {
-    margin-left: 90px;
-    position: absolute;
-    top: 2195px;
+.popup-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
-#img-arow3 {
-    margin-left: 90px;
-    position: absolute;
-    top: 2445px;
+.popup-left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
-#img-arow4 {
-    margin-left: 80px;
-    position: absolute;
-    top: 2445px;
+.popup-right {
+    flex: 1;
 }
 
-#img-arow5 {
-    margin-left: 90px;
+.popup-pricing {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.olde-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 30px;
+}
+
+.newe-price {
+
+    font-weight: bold;
+    margin-left: 30px;
     position: absolute;
-    top: 2445px;
+}
+
+.sale-badge {
+    background-color: red;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 190px;
+
+}
+
+.popup-desc {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.popup-sizes p,
+.popup-quantity p {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.size-options button {
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 6px 14px;
+    margin: 5px;
+    cursor: pointer;
+    background: white;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-box input {
+    width: 40px;
+    text-align: center;
+
+}
+
+.popup-buttons {
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background: white;
+    border: 1px solid #333;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buy-now {
+    background: black;
+    color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /* --------------------- Tablet View --------------------- */
@@ -723,17 +828,6 @@ header {
     #img-p1 {
         margin-top: 190px;
         font-size: 16px;
-    }
-
-    #img-arow {
-        position: absolute;
-        /* fix position issue */
-        top: auto;
-        margin-left: 0;
-        margin-top: 10px;
-        font-size: 24px;
-        text-align: center;
-
     }
 
 }
@@ -799,46 +893,9 @@ header {
         word-wrap: break-word;
     }
 
-    #img-arow {
-        margin-top: -32px;
-        margin-left: 80px;
-        font-size: 13px;
-    }
 
-    #img-arow1 {
-        position: absolute;
-        top: 164px;
-        left: -13px;
-        font-size: 13px;
-    }
 
-    #img-arow2 {
-        position: absolute;
-        top: 164px;
-        left: -10px;
-        font-size: 13px;
-    }
 
-    #img-arow3 {
-        position: absolute;
-        top: 164px;
-        left: -19px;
-        font-size: 13px;
-    }
-
-    #img-arow4 {
-        position: absolute;
-        top: 164px;
-        left: -14px;
-        font-size: 13px;
-    }
-
-    #img-arow5 {
-        position: absolute;
-        top: 164px;
-        left: -4px;
-        font-size: 13px;
-    }
 }
 
 /* section 2 end */
@@ -999,12 +1056,16 @@ header {
     text-decoration: line-through;
     color: #999;
     font-size: 13px;
+
+    margin-left: -160px;
 }
 
 .new-price {
     font-weight: bold;
     color: black;
     font-size: 15px;
+    margin-top: -23px;
+    margin-left: 170px;
 }
 
 .choose-btn {

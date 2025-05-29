@@ -209,8 +209,95 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+              <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
+
+            <div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
+
+            <div id="popupBox" class="popup-box">
+                <span class="close-btn" onclick="closePopup()">×</span>
+                <div class="popup-inner">
+                    <div class="popup-left">
+                        <img id="popupImg"
+                            src="https://joggy.pk/cdn/shop/files/Photoroom_20240418_053830.webp?v=1713545328&width=533"
+                            alt="Product Image" />
+                    </div>
+                    <div class="popup-right">
+                        <h2 id="popupTitle">Product Title</h2>
+                        <p class="popup-pricing">
+                            <span id="popupOldPrice" class="olde-price">Rs. 3,980.00 PKR</span>
+                            <span id="popupNewPrice" class="newe-price">Rs. 2,490.00 PKR</span>
+                            <span class="sale-badge">Sale</span>
+                        </p>
+                        <p class="popup-desc" id="popupDesc">
+                            Product description goes here.
+                        </p>
+
+                        <div class="popup-sizes">
+                            <p>Size</p>
+                            <div class="size-options">
+                                <button>40/6</button>
+                                <button>41/7</button>
+                                <button>42/8</button>
+                                <button>43/9</button>
+                                <button>44/10</button>
+                                <button>45/11</button>
+                            </div>
+                        </div>
+
+                        <div class="qty-box">
+                            <button class="sub" onclick="decreaseQty()">−</button>
+                            <input type="text" id="qtyInput" value="1" readonly />
+                            <button class="add" onclick="increaseQty()">+</button>
+                        </div>
+
+
+                        <div class="popup-buttons">
+                            <button class="add-to-cart">Add to cart</button>
+                            <button class="buy-now">Buy it now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                function openPopup(imgSrc, title, oldPrice, newPrice, desc) {
+                    document.getElementById("popupOverlay").style.display = "block";
+                    document.getElementById("popupBox").style.display = "block";
+
+                    document.getElementById("popupImg").src = imgSrc;
+                    document.getElementById("popupTitle").textContent = title;
+                    document.getElementById("popupOldPrice").textContent = oldPrice;
+                    document.getElementById("popupNewPrice").textContent = newPrice;
+                    document.getElementById("popupDesc").textContent = desc;
+                }
+
+                function closePopup() {
+                    document.getElementById("popupOverlay").style.display = "none";
+                    document.getElementById("popupBox").style.display = "none";
+                }
+
+                function increaseQty() {
+                    let qty = document.getElementById("qtyInput");
+                    qty.value = parseInt(qty.value) + 1;
+                }
+
+                function decreaseQty() {
+                    let qty = document.getElementById("qtyInput");
+                    if (parseInt(qty.value) > 1) {
+                        qty.value = parseInt(qty.value) - 1;
+                    }
+                }
+
+            </script>
 
             <!-- Product Card 2 -->
             <div class="product-card product-card2">
@@ -222,7 +309,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
 
             <!-- Product Card 3 -->
@@ -235,7 +329,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
 
             <!-- Product Card 4 -->
@@ -247,7 +348,14 @@
                     <div class="old-price">Rs. 3,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
             <!-- Product Card 5 -->
             <div class="product-card product-card1">
@@ -258,7 +366,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
             <!-- Product Card 6 -->
             <div class="product-card product-card1">
@@ -269,7 +384,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
             <!-- Product Card 7 -->
             <div class="product-card product-card1">
@@ -280,7 +402,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
             <!-- Product Card 8 -->
             <div class="product-card product-card1">
@@ -291,7 +420,14 @@
                     <div class="old-price">Rs. 4,980.00 PKR</div>
                     <div class="new-price">Rs. 2,490.00 PKR</div>
                 </div>
-                <button class="choose-btn">Choose options</button>
+                <button class="choose-btn" onclick="openPopup(
+                'https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533',
+                
+                'Ash Grey Strap Pure Leather Slides - HE - 4',
+                'Rs. 3,980.00 PKR',
+                'Rs. 2,490.00 PKR',
+                'Premium ash grey slides, casual and semi-formal wear.'
+                )">Choose options</button>
             </div>
         </div>
         <!-- section3 end -->

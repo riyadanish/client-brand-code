@@ -88,6 +88,13 @@ header {
 
 }
 
+#log-icon {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-left: -8px;
+}
+
 .nav-links li a {
     color: rgb(200, 197, 197);
     text-decoration: none;
@@ -110,13 +117,6 @@ header {
     color: white;
     margin-left: 990px;
     margin-top: -260px;
-}
-
-#log-icon {
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    margin-left: -8px;
 }
 
 #icon2 {
@@ -986,6 +986,9 @@ header {
     }
 }
 
+
+
+
 .filter-container {
     position: relative;
     display: inline-block;
@@ -1049,6 +1052,7 @@ header {
     cursor: pointer;
     text-decoration: underline;
 }
+
 .popup-overlay {
     position: fixed;
     top: 0;

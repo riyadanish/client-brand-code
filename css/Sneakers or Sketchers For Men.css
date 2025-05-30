@@ -116,6 +116,7 @@ header {
     font-size: 15px;
     color: white;
     margin-left: 990px;
+    cursor: pointer;
     margin-top: -260px;
 }
 
@@ -1052,6 +1053,7 @@ header {
     cursor: pointer;
     text-decoration: underline;
 }
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -1189,3 +1191,106 @@ header {
     font-size: 30px;
     cursor: pointer;
 }
+
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* ← Changed from left: 0 to right: 0 */
+    width: 430px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    /* ← Optional: shadow from left side */
+    transform: translateX(100%);
+    /* ← Changed direction */
+    transition: transform 0.3s ease;
+    z-index: 9999;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.shop {
+    margin-top: 230px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-drawer.show {
+    transform: translateX(0);
+}
+
+.close-bt {
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    font-weight: 5;
+    position: absolute;
+    left: 370px;
+    top: -10px;
+}
+
+.card-header {
+
+    padding-top: 500px;
+}
+
+.shop-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+}
+
+.shop-p1 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-top: -70px;
+}
+
+.shop-p2 {
+    margin-top: 40px;
+    font-size: 20px;
+
+}
+
+.shop-log {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+.cart-footer {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    display: none;
+    /* hidden by default */
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.size-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .size-button.active {
+    background-color: black;
+    color: white;
+  }

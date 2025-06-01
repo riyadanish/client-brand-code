@@ -827,3 +827,13 @@ color: white;
     background-color: black;
     color: white;
   }
+   .main{
+       margin-left: 300px;
+       width: 900px;
+  }
+  .main h3,p,ul{
+     margin-left: 30px;
+  }
+  .main h1{
+    font-size: 40px;
+  }

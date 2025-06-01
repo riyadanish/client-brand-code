@@ -548,6 +548,7 @@ header {
         padding-left: 20px;
     }
 }
+
 /* section4 start */
 .main-footer {
     background: linear-gradient(to right, #111, #444);
@@ -556,7 +557,7 @@ header {
     height: 400px;
     position: absolute;
     left: -10px;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 .footer {
@@ -579,7 +580,7 @@ header {
     top: 350px;
     left: 300px;
     font-size: 10px;
-color: white;
+    color: white;
 }
 
 #foo-ul {
@@ -742,7 +743,7 @@ color: white;
     z-index: 9999;
     padding: 20px;
     overflow-y: auto;
-    
+
 }
 
 .shop {
@@ -821,17 +822,19 @@ color: white;
     margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
-  }
+}
 
-  .size-button.active {
+.size-button.active {
     background-color: black;
     color: white;
-  }
-  .main{
-       margin-left: 300px;
-       width: 900px;
-  }
-  .main h3,p,ul{
-     margin-left: 30px;
-  }
- 
+}
+.jewelry h1{
+    margin-left: 400px;
+}
+#pip{
+    margin-left: 400px;
+}
+#pipp{
+    margin-left: 400px;
+    width: 600px;
+}

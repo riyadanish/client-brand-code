@@ -119,6 +119,7 @@ header {
     color: white;
     margin-left: 990px;
     margin-top: -260px;
+    cursor: pointer;
 }
 
 #icon2 {
@@ -1434,114 +1435,178 @@ span {
     }
 }
 
-/* footer strat */
+/* section4 start */
 .main-footer {
+    background: linear-gradient(to right, #111, #444);
+    color: white;
     width: 100%;
     height: 400px;
-    background: linear-gradient(to right, #111, #444);
-    margin-top: 70px;
-
+    position: absolute;
+    left: -10px;
+    margin-top: 30px;
 }
 
 .footer {
-    color: grey;
     position: absolute;
-    left: 200px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-#foo-2:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-#foo-1:hover {
-    color: white;
-    text-decoration: underline;
+    left: 300px;
+    top: 30px;
+    font-size: 15px;
 }
 
 .footer1 {
-    color: rgb(156, 155, 155);
     position: absolute;
     left: 700px;
-    margin-top: 20px;
+    top: 30px;
+    font-size: 15px;
 }
 
 .footer2 {
     display: flex;
-    color: white;
     position: absolute;
-    left: 380px;
-    margin-top: 350px;
+    top: 350px;
+    left: 300px;
     font-size: 10px;
-    cursor: pointer;
+
 }
 
 #foo-ul {
     display: flex;
-    gap: 20px;
-    list-style: disc;
-
-}
-
-#foo-1 {
-    list-style: disc;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 30px;
 }
 
 #foo-hr {
-    position: absolute;
-    top: 11290px;
-    left: -700px;
-    color: white;
-    width: 150%;
+    margin-top: 330px;
 }
 
+#foo-1:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+#foo-2:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+/* @media (max-width: 1075px){
+   
+}
+@media (max-width: 600px){}
+@media (max-width: 500px){}
+@media (max-width: 455px){} */
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1075px) {
+    .footer {
+        left: 50px;
+        top: 30px;
+    }
+
+    .footer1 {
+        left: 400px;
+        top: 30px;
+    }
+
+    .footer2 {
+        left: 50px;
+        top: 330px;
+    }
+
+    #foo-hr {
+        margin-top: 310px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: static;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .footer1 {
+        position: static;
+        margin-bottom: 20px;
+        margin-left: 320px;
+        margin-top: -220px;
+        font-size: 10px;
+    }
+
+    .footer2 {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    #foo-ul {
+        justify-content: center;
+        gap: 20px;
+    }
 
     .main-footer {
         height: auto;
-        padding: 20px;
+        padding: 30px 20px;
+        position: relative;
     }
 
-    .footer,
-    .footer1,
+    #foo-hr {
+        display: flex;
+        margin-top: 90px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .footer1 {
+        margin-left: 220px;
+        width: 200px;
+    }
+
     .footer2 {
-        position: static;
-        margin: 1px 0;
-
-    }
-
-    .only-desktop {
-        display: none;
-    }
-
-    .footer2 {
-        flex-direction: column;
-        font-size: 12px;
-        justify-content: center;
-        align-items: center;
+        font-size: 10px;
     }
 
     #foo-ul {
         display: flex;
-        flex-wrap: wrap;
-
-        list-style: disc;
-
-    }
-
-    #foo-1 {
-        list-style: disc;
+        align-items: center;
+        gap: 30px;
+        margin-left: -40px;
     }
 
     #foo-hr {
-        position: static;
-        width: 100%;
-        margin: 20px 0;
+        margin-top: 40px;
+    }
+}
 
+@media (max-width: 455px) {
+    .main-footer {
+        padding: 20px 10px;
+    }
+
+    .footer {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    .footer1 {
+        font-size: 10px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    #foo-ul {
+        font-size: 10px;
     }
 }
 
@@ -1684,6 +1749,8 @@ span {
 }
 
 
+
+
 .cart-drawer {
     position: fixed;
     top: 0;
@@ -1700,7 +1767,7 @@ span {
     z-index: 9999;
     padding: 20px;
     overflow-y: auto;
-    
+
 }
 
 .shop {
@@ -1779,9 +1846,9 @@ span {
     margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
-  }
+}
 
-  .size-button.active {
+.size-button.active {
     background-color: black;
     color: white;
-  }
+}

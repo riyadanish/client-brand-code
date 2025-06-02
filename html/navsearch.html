@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUNE & LINEN</title>
     <link rel="shortcut icon" href="../images/logo-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navsearch.css">
     <script defer src="../js/main.js"></script>
 
     <!-- Bootstrap -->
@@ -22,7 +22,7 @@
     <!-- head start -->
     <div class="start">
         <i class="fa-brands fa-facebook" id="icon"></i>
-        <i class="fa-solid fa-bars" id="icon2"></i>
+      
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -51,65 +51,15 @@
     <!-- head end -->
     <!-- nav start -->
     <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="../images/logo-removebg-preview.png" alt="Logo" />
-                <h1>LUNE & LINEN</h1>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">SALE SALE SALE !</a></li>
-                <li><a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a></li>
-                <li><a href="loafers.html">Loafers</a></li>
-                <li><a href="slides for men.html">Slides For Men</a></li>
-                <li><a href="flip flop.html">Flip Flops For Men</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="nav-icons">
-                <a href="navsearch.html"><i class="fas fa-search" id="log-icon"></i></a>
-                <a href="log in.html"><i class="far fa-user" id="log-icon"></i></a>
-                <i class="fas fa-bag-shopping" onclick="openCart()"></i>
-            </div>
-        </nav>
-
-
-        </div>
-
-
-
+        <nav class="nav-container ">
+                 <input type="text" placeholder="SEARCH" class="nav-input">
+                   <i class="fas fa-search" id="nav-on"></i>
+                   
+                   <a href="index.html"><button class="close-bt"  id="nav-off">×</button></a>
+                  
+                 </nav>
+   
     </header>
-    <!-- nav end -->
-    <!-- side menu start -->
-    <div id="sideMenu" class="side-menu">
-        <a href="#" onclick="toggleMenu()">✕</a>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="contact.html">Contact</a>
-        <a href="loafers.html">Loafers</a>
-        <a href="slides for men.html">Slides For Men </a>
-        <a href="flip flop.html">Flip Flops For Men</a>
-        <a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a>
-        <a href="log in.html"></a><i class="far fa-user"><span style="margin-left: 20px;">Log in</span></i></a>
-        <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("sideMenu").classList.toggle("open");
-        }
-    </script>
-
-    <script>
-        const menuIcon = document.getElementById('icon2');
-        const sideMenu = document.querySelector('.side-menu');
-
-        menuIcon.addEventListener('click', () => {
-            sideMenu.classList.toggle('open');
-        });
-    </script>
 
 
 

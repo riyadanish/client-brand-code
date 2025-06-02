@@ -62,115 +62,25 @@ header {
     flex-wrap: wrap;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.nav-input{
+    width: 800px;
+    height: 60px;
+    padding-left: 40px;
+    font-size: 20px;
+    margin-left: 250px;
+    background-color: transparent;
+    border: 3px solid white;
 }
-
-.logo img {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    left: 220px;
-    top: 45px;
-
-}
-
-.logo h1 {
+#nav-on{
     color: white;
-    font-size: 17px;
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 150px;
+    margin-left: -140px;
+    font-size: 20px;
 }
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    width: 600px;
-    padding: 0;
-    margin: 0;
-    padding-top: 10px;
-
-}
-
-.nav-links li a {
-    color: rgb(200, 197, 197);
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: 500;
-    transition: 0.3s;
-    list-style: none;
-    margin-left: -2px
-}
-
-.nav-links li a:hover {
+#nav-off{
     color: white;
-    text-decoration: underline;
+    margin-top:75px;
+    margin-left: 740px;
 }
-
-.nav-icons {
-    display: flex;
-    gap: 20px;
-    font-size: 15px;
-    color: white;
-    margin-left: 990px;
-    margin-top: -260px;
-    cursor: pointer;
-}
-#log-icons{
-    color: white;
-  position: absolute;
-  left: 1040px;
-}
-#icon2 {
-    display: none;
-}
-
-/* Side Menu */
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    width: 250px;
-    background-color: #111;
-    color: white;
-    padding-top: 60px;
-    transition: 0.3s ease;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-}
-
-.side-menu a {
-    padding: 15px 20px;
-    color: grey;
-    text-decoration: none;
-    transition: 0.2s;
-    font-size: 18px;
-}
-
-.side-menu i {
-    margin-left: 20px;
-}
-
-.side-menu a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-
-.side-menu.open {
-    left: 0;
-}
-
-
-
-
 .sec1 {
     width: 100%;
     height: 150px;

@@ -14,283 +14,295 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- head start -->
-    <div class="start">
-        <i class="fa-brands fa-facebook" id="icon"></i>
-        <i class="fa-solid fa-bars" id="icon2"></i>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p>15 DAYS HASSLE-FREE RETURN OR EXCHANGE!</p>
+    <div class="ibm-plex-serif-semibold-italic ">
+        <!-- head start -->
+        <div class="start">
+            <i class="fa-brands fa-facebook" id="icon"></i>
+            <i class="fa-solid fa-bars" id="icon2"></i>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>15 DAYS HASSLE-FREE RETURN OR EXCHANGE!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>FLAT 60% OFF with FREE DELIVERY!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>* GUARANTEED QUALITY PRODUCTS *</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>؀بڑی عید کی بڑی سیل؀</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <p>FLAT 60% OFF with FREE DELIVERY!</p>
-                </div>
-                <div class="carousel-item">
-                    <p>* GUARANTEED QUALITY PRODUCTS *</p>
-                </div>
-                <div class="carousel-item">
-                    <p>؀بڑی عید کی بڑی سیل؀</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" style="background-size: 40% 40%;"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" style="background-size: 40% 40%;"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" style="background-size: 40% 40%;"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" style="background-size: 40% 40%;"></span>
-            </button>
         </div>
-    </div>
-    <!-- head end -->
-    <!-- nav start -->
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="../images/logo-removebg-preview.png" alt="Logo" />
-                <h1>LUNE & LINEN</h1>
+        <!-- head end -->
+        <!-- nav start -->
+        <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo-removebg-preview.png" alt="Logo" />
+                    <h1>LUNE & LINEN</h1>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">SALE SALE SALE !</a></li>
+                    <li><a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a></li>
+                    <li><a href="loafers.html">Loafers</a></li>
+                    <li><a href="slides for men.html">Slides For Men</a></li>
+                    <li><a href="flip flop.html">Flip Flops For Men</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                    <a href="log in.html"><i class="far fa-user" id="log-icon"></i></a>
+                    <i class="fas fa-bag-shopping" onclick="openCart()"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- nav end -->
+        <!-- side menu start -->
+        <div id="sideMenu" class="side-menu">
+            <a href="#" onclick="toggleMenu()">✕</a>
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="contact.html">Contact</a>
+            <a href="loafers.html">Loafers</a>
+            <a href="slides for men.html">Slides For Men </a>
+            <a href="flip flop.html">Flip Flops For Men</a>
+            <a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a>
+            <a href="log in.html"></a><i class="far fa-user"><span style="margin-left: 20px;">Log in</span></i></a>
+            <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("sideMenu").classList.toggle("open");
+            }
+        </script>
+
+        <script>
+            const menuIcon = document.getElementById('icon2');
+            const sideMenu = document.querySelector('.side-menu');
+
+            menuIcon.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+            });
+        </script>
+        <!-- section4 start -->
+        <section>
+            <!-- Left Side Cart Drawer -->
+            <div id="cartDrawer" class="cart-drawer">
+                <div class="cart-header">
+
+                    <button class="close-bt" onclick="closeCart()">×</button>
+                </div>
+                <div class="shop">
+                    <p class="shop-p1">Your card is empty</p>
+                    <a href="catalog.html"> <button class="shop-btn">Countinue shopping</button></a>
+                    <p class="shop-p2">Have an account?</p>
+                    <p class="shop-p3"><a href="log in.html"><span class="shop-log">Log in</span></a> to check out
+                        faster.</p>
+                </div>
+
+                <div id="cartItems" class="cart-items"></div>
+                <div class="cart-footer">
+                    <div id="totalPrice">Total: Rs. 0</div>
+                </div>
             </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html">SALE SALE SALE !</a></li>
-                <li><a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a></li>
-                <li><a href="loafers.html">Loafers</a></li>
-                <li><a href="slides for men.html">Slides For Men</a></li>
-                <li><a href="flip flop.html">Flip Flops For Men</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        </section>
+
+
+        <!-- section4 end -->
+        <div class="main">
+            <br><br>
+            <h1>Return & Exchange Policy</h1><br> <br>
+            <p>At Lune & Linen, we believe in creating a seamless and trustworthy shopping experience for all our
+                customers.
+                We understand that sometimes things don’t go as planned — whether it’s a size mismatch or a change of
+                mind —
+                and we’re here to make it right.</p>
+            <br><br>
+            <h2>✅ Eligibility for Return & Exchange</h2>
+            <br><br>
+            <p>We accept returns and exchanges under the following conditions:</p><br>
+
+            <ul>
+                <li>Return or exchange requests must be made within 7 days of receiving the order.</li><br>
+                <li>The product must be:</li><br>
+                <li>Unused and unworn</li><br>
+                <li>In its original condition and packaging</li><br>
+                <li>With all tags and labels intact</li><br>
             </ul>
-
-            <div class="nav-icons">
-                <i class="fas fa-search"></i>
-                <a href="log in.html"><i class="far fa-user" id="log-icon"></i></a>
-                <i class="fas fa-bag-shopping" onclick="openCart()"></i>
-            </div>
-        </nav>
-    </header>
-    <!-- nav end -->
-    <!-- side menu start -->
-    <div id="sideMenu" class="side-menu">
-        <a href="#" onclick="toggleMenu()">✕</a>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="contact.html">Contact</a>
-        <a href="loafers.html">Loafers</a>
-        <a href="slides for men.html">Slides For Men </a>
-        <a href="flip flop.html">Flip Flops For Men</a>
-        <a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a>
-        <a href="log in.html"></a><i class="far fa-user"><span style="margin-left: 20px;">Log in</span></i></a>
-        <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("sideMenu").classList.toggle("open");
-        }
-    </script>
-
-    <script>
-        const menuIcon = document.getElementById('icon2');
-        const sideMenu = document.querySelector('.side-menu');
-
-        menuIcon.addEventListener('click', () => {
-            sideMenu.classList.toggle('open');
-        });
-    </script>
-    <!-- section4 start -->
-    <section>
-        <!-- Left Side Cart Drawer -->
-        <div id="cartDrawer" class="cart-drawer">
-            <div class="cart-header">
-
-                <button class="close-bt" onclick="closeCart()">×</button>
-            </div>
-            <div class="shop">
-                <p class="shop-p1">Your card is empty</p>
-                <a href="catalog.html"> <button class="shop-btn">Countinue shopping</button></a>
-                <p class="shop-p2">Have an account?</p>
-                <p class="shop-p3"><a href="log in.html"><span class="shop-log">Log in</span></a> to check out
-                    faster.</p>
-            </div>
-
-            <div id="cartItems" class="cart-items"></div>
-            <div class="cart-footer">
-                <div id="totalPrice">Total: Rs. 0</div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- section4 end -->
-    <div class="main">
-        <br><br>
-        <h1>Return & Exchange Policy</h1><br> <br>
-        <p>At Lune & Linen, we believe in creating a seamless and trustworthy shopping experience for all our customers.
-            We understand that sometimes things don’t go as planned — whether it’s a size mismatch or a change of mind —
-            and we’re here to make it right.</p>
-        <br><br>
-        <h2>✅ Eligibility for Return & Exchange</h2>
-        <br><br>
-        <p>We accept returns and exchanges under the following conditions:</p><br>
-
-        <ul>
-            <li>Return or exchange requests must be made within 7 days of receiving the order.</li><br>
-            <li>The product must be:</li><br>
-            <li>Unused and unworn</li><br>
-            <li>In its original condition and packaging</li><br>
-            <li>With all tags and labels intact</li><br>
-        </ul>
-        <br>
-        <p>Items that show signs of wear, damage, or use will not be eligible for return or exchange.</p>
-        <br><br>
-        <h2>🔁 Exchange Policy</h2>
-        <br><br>
-        <ul>
-            <li>We allow one-time free exchange for size or a different product of the same or higher value (difference
-                to be paid by customer).</li><br>
-            <li>Exchange is subject to stock availability</li><br>
-            <li>If the desired product is out of stock, you will receive store credit equal to the product value.</li>
             <br>
-        </ul>
-        <br>
-        <h2>❌ Items Not Eligible for Return/Exchange</h2><br>
-        <p>Please note the following items cannot be returned or exchanged:</p><br>
-        <ul>
-            <li>Jewelry items (due to hygiene reasons)</li><br>
-            <li>Sale items or products purchased during promotional offers</li><br>
-            <li>Customized or limited edition products</li><br>
-            <li>Products returned without original packaging or missing tags</li><br>
-        </ul>
-        <br>
-        <h2>💸 Refunds</h2><br>
-        <p>We currently do not offer cash refunds. If your return is approved, you will receive:</p><br>
-        <ul>
-            <li>Store credit or a discount voucher valid for your next purchase, equal to the value of the returned item
-                (excluding shipping charges).</li>
-        </ul>
-        <br>
-        <h2>🚚 Return Shipping Charges</h2><br>
-        <ul>
-            <li>The customer is responsible for the cost of returning the item unless the product was damaged or
-                incorrect upon arrival.</li><br>
-            <li>We recommend using a trackable courier service to avoid any loss.</li>
-        </ul>
-        <br>
-        <h2>📦 Damaged or Incorrect Items</h2><br>
-        <p>If you receive a damaged, defective, or wrong item:</p>
-        <ul>
-            <li>Please contact us at support@luneandlinen.com within 48 hours of receiving the order.</li><br>
-            <li>Include photos of the damaged item and your order number.</li><br>
-            <li>Our team will arrange for a replacement or issue store credit, depending on stock availability.</li>
-        </ul>
-        <br>
-        <h2>🙋 Need Help?</h2>
-        <p>If you have any questions, feel free to reach out to our Customer Care team at:
+            <p>Items that show signs of wear, damage, or use will not be eligible for return or exchange.</p>
             <br><br>
-            📧 lune&linen@gmail.com
+            <h2>🔁 Exchange Policy</h2>
             <br><br>
-            📱 +92-3371354390
-            <br><br><br>
-            Thank you for shopping with Lune & Linen. <br>
-            We’re always here to make your experience better.
-        </p>
-    </div>
- <footer>
-        <div class="main-footer">
-            <div class="footer">
-                <h4 id="foo-2" style="color: white;">Our Policy</h4> <br class="only-desktop"> <br class="only-desktop">
-                <a href="Return Policy.html" style="color: white; text-decoration: none;">
-                    <p id="foo-2">Return & Exchange Policy</p>
-                </a>
-                <a href="shipping.html" style="color: white; text-decoration: none;">
-                    <p id="foo-2">Shipping Policy</p>
-                </a>
-                <a href="privacy.html" style="color: white; text-decoration: none;">
-                    <p id="foo-2">Privacy policy</p>
-                </a>
-                <a href="contact.html" style="color: white; text-decoration: none;">
-                    <p id="foo-2">Contact Information</p>
-                </a>
-                <a href="search.html" style="color: white; text-decoration: none;">
-                    <p id="foo-2">Search</p>
-                </a>
-
-            </div>
-            <div class="footer1">
-
-                <h4 id="foo-7" style="color: white;">Our Mission</h4> <br class="only-desktop"> <br
-                    class="only-desktop">
-                <p>Our Mission is to Provide Our Customers Foot Wear in Reasonable Price. <br> We Deliver at
-                    Yourdoorsteps</p>
-                <p>Our Market Place is Pakistan. Customer Living in any Location of Pakistan <br> can Get their
-                    Delivery Free Of Cost Within Selected Days.</p>
-            </div>
-            <hr id="foo-hr">
-            <div class="footer2">
-                <p>© 2025, Lune & Linen – Luxury That Moves With You</p>
-                <ul id="foo-ul">
-                    <a href="refund.html" style="color: white; text-decoration: none;">
-                        <li id="foo-1">Refund policy</li>
-                    </a>
-                    <a href="privacy.html" style="color: white; text-decoration: none;">
-                        <li id="foo-1">Privacy policy</li>
-                    </a>
-                    <a href="term.html" style="color: white; text-decoration: none;">
-                        <li id="foo-1">Terms of service</li>
+            <ul>
+                <li>We allow one-time free exchange for size or a different product of the same or higher value
+                    (difference
+                    to be paid by customer).</li><br>
+                <li>Exchange is subject to stock availability</li><br>
+                <li>If the desired product is out of stock, you will receive store credit equal to the product value.
+                </li>
+                <br>
+            </ul>
+            <br>
+            <h2>❌ Items Not Eligible for Return/Exchange</h2><br>
+            <p>Please note the following items cannot be returned or exchanged:</p><br>
+            <ul>
+                <li>Jewelry items (due to hygiene reasons)</li><br>
+                <li>Sale items or products purchased during promotional offers</li><br>
+                <li>Customized or limited edition products</li><br>
+                <li>Products returned without original packaging or missing tags</li><br>
+            </ul>
+            <br>
+            <h2>💸 Refunds</h2><br>
+            <p>We currently do not offer cash refunds. If your return is approved, you will receive:</p><br>
+            <ul>
+                <li>Store credit or a discount voucher valid for your next purchase, equal to the value of the returned
+                    item
+                    (excluding shipping charges).</li>
+            </ul>
+            <br>
+            <h2>🚚 Return Shipping Charges</h2><br>
+            <ul>
+                <li>The customer is responsible for the cost of returning the item unless the product was damaged or
+                    incorrect upon arrival.</li><br>
+                <li>We recommend using a trackable courier service to avoid any loss.</li>
+            </ul>
+            <br>
+            <h2>📦 Damaged or Incorrect Items</h2><br>
+            <p>If you receive a damaged, defective, or wrong item:</p>
+            <ul>
+                <li>Please contact us at support@luneandlinen.com within 48 hours of receiving the order.</li><br>
+                <li>Include photos of the damaged item and your order number.</li><br>
+                <li>Our team will arrange for a replacement or issue store credit, depending on stock availability.</li>
+            </ul>
+            <br>
+            <h2>🙋 Need Help?</h2>
+            <p>If you have any questions, feel free to reach out to our Customer Care team at:
+                <br><br>
+                📧 lune&linen@gmail.com
+                <br><br>
+                📱 +92-3371354390
+                <br><br><br>
+                Thank you for shopping with Lune & Linen. <br>
+                We’re always here to make your experience better.
+            </p>
+        </div>
+        <footer>
+            <div class="main-footer">
+                <div class="footer">
+                    <h4 id="foo-2" style="color: white;">Our Policy</h4> <br class="only-desktop"> <br
+                        class="only-desktop">
+                    <a href="Return Policy.html" style="color: white; text-decoration: none;">
+                        <p id="foo-2">Return & Exchange Policy</p>
                     </a>
                     <a href="shipping.html" style="color: white; text-decoration: none;">
-                        <li id="foo-1">Shipping policy</li>
+                        <p id="foo-2">Shipping Policy</p>
+                    </a>
+                    <a href="privacy.html" style="color: white; text-decoration: none;">
+                        <p id="foo-2">Privacy policy</p>
                     </a>
                     <a href="contact.html" style="color: white; text-decoration: none;">
-                        <li id="foo-1">Contact information</li>
+                        <p id="foo-2">Contact Information</p>
                     </a>
-                </ul>
+                    <a href="search.html" style="color: white; text-decoration: none;">
+                        <p id="foo-2">Search</p>
+                    </a>
+
+                </div>
+                <div class="footer1">
+
+                    <h4 id="foo-7" style="color: white;">Our Mission</h4> <br class="only-desktop"> <br
+                        class="only-desktop">
+                    <p>Our Mission is to Provide Our Customers Foot Wear in Reasonable Price. <br> We Deliver at
+                        Yourdoorsteps</p>
+                    <p>Our Market Place is Pakistan. Customer Living in any Location of Pakistan <br> can Get their
+                        Delivery Free Of Cost Within Selected Days.</p>
+                </div>
+                <hr id="foo-hr">
+                <div class="footer2">
+                    <p>© 2025, Lune & Linen – Luxury That Moves With You</p>
+                    <ul id="foo-ul">
+                        <a href="refund.html" style="color: white; text-decoration: none;">
+                            <li id="foo-1">Refund policy</li>
+                        </a>
+                        <a href="privacy.html" style="color: white; text-decoration: none;">
+                            <li id="foo-1">Privacy policy</li>
+                        </a>
+                        <a href="term.html" style="color: white; text-decoration: none;">
+                            <li id="foo-1">Terms of service</li>
+                        </a>
+                        <a href="shipping.html" style="color: white; text-decoration: none;">
+                            <li id="foo-1">Shipping policy</li>
+                        </a>
+                        <a href="contact.html" style="color: white; text-decoration: none;">
+                            <li id="foo-1">Contact information</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-   
-    <script>
-        let cart = [];
+        </footer>
 
-        function openCart() {
-            document.getElementById("cartDrawer").classList.add("show");
-            updateCartDisplay();
-        }
+        <script>
+            let cart = [];
 
-        function closeCart() {
-            document.getElementById("cartDrawer").classList.remove("show");
-        }
+            function openCart() {
+                document.getElementById("cartDrawer").classList.add("show");
+                updateCartDisplay();
+            }
 
-        function addToCart(productName, price, imageUrl) {
-            cart.push({ name: productName, price: price, image: imageUrl });
-            updateCartDisplay();
-            openCart();
-        }
+            function closeCart() {
+                document.getElementById("cartDrawer").classList.remove("show");
+            }
 
-        function removeFromCart(index) {
-            cart.splice(index, 1);
-            updateCartDisplay();
-        }
+            function addToCart(productName, price, imageUrl) {
+                cart.push({ name: productName, price: price, image: imageUrl });
+                updateCartDisplay();
+                openCart();
+            }
 
-        function updateCartDisplay() {
-            const cartItemsDiv = document.getElementById("cartItems");
-            const cartFooter = document.querySelector(".cart-footer");
-            const shopDiv = document.querySelector(".shop");
+            function removeFromCart(index) {
+                cart.splice(index, 1);
+                updateCartDisplay();
+            }
 
-            cartItemsDiv.innerHTML = "";
+            function updateCartDisplay() {
+                const cartItemsDiv = document.getElementById("cartItems");
+                const cartFooter = document.querySelector(".cart-footer");
+                const shopDiv = document.querySelector(".shop");
 
-            if (cart.length > 0) {
-                let total = 0;
+                cartItemsDiv.innerHTML = "";
 
-                cart.forEach((item, index) => {
-                    total += parseInt(item.price.replace(/\D/g, ""));
-                    cartItemsDiv.innerHTML += `
+                if (cart.length > 0) {
+                    let total = 0;
+
+                    cart.forEach((item, index) => {
+                        total += parseInt(item.price.replace(/\D/g, ""));
+                        cartItemsDiv.innerHTML += `
           <div class="cart-item" style="display: flex; align-items: center; margin-bottom: 10px;">
             <img src="${item.image}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 10px; margin-right: 10px;">
             <div>
@@ -300,18 +312,18 @@
             </div>
           </div>
         `;
-                });
+                    });
 
-                document.getElementById("totalPrice").innerText = `Total: Rs. ${total}`;
-                cartFooter.style.display = "block";
-                shopDiv.style.display = "none"; // hide shop when cart has items
-            } else {
-                cartFooter.style.display = "none";
-                shopDiv.style.display = "block"; // show shop when cart is empty
+                    document.getElementById("totalPrice").innerText = `Total: Rs. ${total}`;
+                    cartFooter.style.display = "block";
+                    shopDiv.style.display = "none"; // hide shop when cart has items
+                } else {
+                    cartFooter.style.display = "none";
+                    shopDiv.style.display = "block"; // show shop when cart is empty
+                }
             }
-        }
-    </script>
-
+        </script>
+    </div>
 </body>
 
 </html>

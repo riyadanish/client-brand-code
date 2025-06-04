@@ -1,6 +1,88 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+}
+.ibm-plex-serif-thin {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-serif-light {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .start {
@@ -172,10 +254,12 @@ header {
     text-align: start;
     padding-top: 20px;
     padding-left: 190px;
+    font-weight: 400;
 }
 
 #sec1-p {
     margin-top: 30px;
+    font-weight: 400;
 }
 
 /* Tablet: 1024px and below */
@@ -557,6 +641,7 @@ header {
     position: absolute;
     left: -10px;
     margin-top: 30px;
+    font-weight: 400;
 }
 
 .footer {
@@ -722,10 +807,6 @@ color: white;
         font-size: 10px;
     }
 }
-
-
-
-
 .cart-drawer {
     position: fixed;
     top: 0;
@@ -742,7 +823,7 @@ color: white;
     z-index: 9999;
     padding: 20px;
     overflow-y: auto;
-    
+    font-weight: 400;
 }
 
 .shop {
@@ -810,6 +891,7 @@ color: white;
     margin-bottom: 10px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    font-weight: 400;
 }
 
 .size-button {
@@ -821,19 +903,24 @@ color: white;
     margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
+    font-weight: 400;
   }
 
   .size-button.active {
     background-color: black;
     color: white;
+    font-weight: 400;
   }
    .main{
        margin-left: 300px;
        width: 900px;
+       font-weight: 400;
   }
   .main h3,p,ul{
      margin-left: 30px;
+     font-weight: 400;
   }
   .main h1{
     font-size: 40px;
+    font-weight: 400;
   }

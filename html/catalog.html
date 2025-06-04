@@ -14,539 +14,550 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- head start -->
-    <div class="start">
-        <i class="fa-brands fa-facebook" id="icon"></i>
-        <i class="fa-solid fa-bars" id="icon2"></i>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p>15 DAYS HASSLE-FREE RETURN OR EXCHANGE!</p>
+    <div class="ibm-plex-serif-thin ">
+        <!-- head start -->
+        <div class="start">
+            <i class="fa-brands fa-facebook" id="icon"></i>
+            <i class="fa-solid fa-bars" id="icon2"></i>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>15 DAYS HASSLE-FREE RETURN OR EXCHANGE!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>FLAT 60% OFF with FREE DELIVERY!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>* GUARANTEED QUALITY PRODUCTS *</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>؀بڑی عید کی بڑی سیل؀</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <p>FLAT 60% OFF with FREE DELIVERY!</p>
-                </div>
-                <div class="carousel-item">
-                    <p>* GUARANTEED QUALITY PRODUCTS *</p>
-                </div>
-                <div class="carousel-item">
-                    <p>؀بڑی عید کی بڑی سیل؀</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" style="background-size: 40% 40%;"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" style="background-size: 40% 40%;"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" style="background-size: 40% 40%;"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" style="background-size: 40% 40%;"></span>
-            </button>
         </div>
-    </div>
-    <!-- head end -->
-    <!-- nav start -->
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="../images/logo-removebg-preview.png" alt="Logo" />
-                <h1>LUNE & LINEN</h1>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">SALE SALE SALE !</a></li>
-                <li><a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a></li>
-                <li><a href="loafers.html">Loafers</a></li>
-                <li><a href="slides for men.html">Slides For Men</a></li>
-                <li><a href="flip flop.html">Flip Flops For Men</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="nav-icons">
-                <i class="fas fa-search"></i>
-                <a href="log in.html"><i class="far fa-user" id="log-icon"></i></a>
-                <i class="fas fa-bag-shopping" onclick="openCart()"></i>
-            </div>
-        </nav>
-    </header>
-    <!-- nav end -->
-    <!-- side menu start -->
-    <div id="sideMenu" class="side-menu">
-        <a href="#" onclick="toggleMenu()">✕</a>
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="contact.html">Contact</a>
-        <a href="loafers.html">Loafers</a>
-        <a href="slides for men.html">Slides For Men </a>
-        <a href="flip flop.html">Flip Flops For Men</a>
-        <a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a>
-        <a href="log in.html"></a><i class="far fa-user"><span style="margin-left: 20px;">Log in</span></i></a>
-        <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("sideMenu").classList.toggle("open");
-        }
-    </script>
-
-    <script>
-        const menuIcon = document.getElementById('icon2');
-        const sideMenu = document.querySelector('.side-menu');
-
-        menuIcon.addEventListener('click', () => {
-            sideMenu.classList.toggle('open');
-        });
-    </script>
-
-
-    <!-- section1 start -->
-    <section>
-        <div class="sec1">
-            <h1>PRODUCTS</h1>
-            <p id="sec1-p">Refined. Radiant. Remarkably You</p>
-        </div>
-    </section>
-    <!-- section1 end -->
-    <!-- section2 start -->
-    <div class="sec-2">
-        <p>Filter:</p>
-        <div class="filters-wrapper">
-
-            <!-- Availability Filter -->
-            <div class="filter-container">
-                <div class="filter-toggle" onclick="toggleDropdown('availabilityDropdown')">Availability <i
-                        class="fa-solid fa-caret-down"></i></div>
-                <div class="filter-dropdown" id="availabilityDropdown">
-                    <div class="filter-header">
-                        <span id="availabilityCount">0 selected</span>
-                        <span class="reset" onclick="resetFilters('availability')">Reset</span>
-                    </div>
-                    <div class="filter-options" id="availabilityOptions">
-                        <label><input type="checkbox" onchange="updateSelected('availability')"> In stock (8)</label>
-                        <label><input type="checkbox" onchange="updateSelected('availability')"> Out of stock
-                            (8)</label>
-                    </div>
+        <!-- head end -->
+        <!-- nav start -->
+        <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="../images/logo-removebg-preview.png" alt="Logo" />
+                    <h1>LUNE & LINEN</h1>
                 </div>
-            </div>
 
-            <!-- Price Filter -->
-            <div class="filter-container">
-                <div class="filter-toggle" onclick="toggleDropdown('priceDropdown')">Price <i
-                        class="fa-solid fa-caret-down"></i></div>
-                <div class="filter-dropdown" id="priceDropdown" style="width: 300px;">
-                    <div class="filter-header">
-                        <span id="priceCount" style="font-size: 10px; margin-top: 3px;">The highest price is
-                            Rs.1,290.00</span>
-                        <span class="reset" onclick="resetFilters('price')">Reset</span>
-                    </div>
-                    <div class="filter-options" id="priceOptions">
-                        <label><input type="checkbox" onchange="updateSelected('price')"> Rs <input type="number"
-                                placeholder="Form" style="width: 70px; height: 35px;padding-left: 15px; "></label>
-                        <label style="margin-left: 130px; margin-top: -42px;"><input type="checkbox"
-                                onchange="updateSelected('price')">Rs <input type="number" placeholder="To"
-                                style="width: 70px; height: 35px;padding-left: 25px;"> </label>
+                <ul class="nav-links">
+                    <li><a href="index.html">SALE SALE SALE !</a></li>
+                    <li><a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a></li>
+                    <li><a href="loafers.html">Loafers</a></li>
+                    <li><a href="slides for men.html">Slides For Men</a></li>
+                    <li><a href="flip flop.html">Flip Flops For Men</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
 
-                    </div>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                    <a href="log in.html"><i class="far fa-user" id="log-icon"></i></a>
+                    <i class="fas fa-bag-shopping" onclick="openCart()"></i>
                 </div>
-            </div>
-
+            </nav>
+        </header>
+        <!-- nav end -->
+        <!-- side menu start -->
+        <div id="sideMenu" class="side-menu">
+            <a href="#" onclick="toggleMenu()">✕</a>
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="contact.html">Contact</a>
+            <a href="loafers.html">Loafers</a>
+            <a href="slides for men.html">Slides For Men </a>
+            <a href="flip flop.html">Flip Flops For Men</a>
+            <a href="Sneakers or Sketchers For Men.html">Sneakers or Sketchers For Men</a>
+            <a href="log in.html"></a><i class="far fa-user"><span style="margin-left: 20px;">Log in</span></i></a>
+            <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
         </div>
 
         <script>
-            function toggleDropdown(id) {
-                document.getElementById(id).classList.toggle("show");
+            function toggleMenu() {
+                document.getElementById("sideMenu").classList.toggle("open");
             }
+        </script>
 
-            function updateSelected(type) {
-                const checkboxes = document.querySelectorAll(`#${type}Options input[type="checkbox"]`);
-                let count = 0;
-                checkboxes.forEach(cb => {
-                    if (cb.checked) count++;
-                });
-                document.getElementById(`${type}Count`).innerText = `${count} selected`;
-            }
+        <script>
+            const menuIcon = document.getElementById('icon2');
+            const sideMenu = document.querySelector('.side-menu');
 
-            function resetFilters(type) {
-                const checkboxes = document.querySelectorAll(`#${type}Options input[type="checkbox"]`);
-                checkboxes.forEach(cb => cb.checked = false);
-                updateSelected(type);
-            }
-
-            // Close dropdowns when clicking outside
-            document.addEventListener('click', function (event) {
-                const dropdowns = document.querySelectorAll(".filter-dropdown");
-                const toggles = document.querySelectorAll(".filter-toggle");
-                let clickedInside = false;
-
-                dropdowns.forEach((dropdown, i) => {
-                    if (dropdown.contains(event.target) || toggles[i].contains(event.target)) {
-                        clickedInside = true;
-                    } else {
-                        dropdown.classList.remove("show");
-                    }
-                });
+            menuIcon.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
             });
         </script>
-    </div>
-    <div class="sec2-2">
-        <p>Sort by:</p>
 
-        <p id="Sort">8 products</p>
-    </div>
-    <!-- section2 end -->
-    <!-- section3 start -->
-    <div class="product-grid-container">
-        <div class="product-grid">
 
-            <!-- Product Card 1 -->
-            <div class="product-card product-card1">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533" alt="Brown Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
+        <!-- section1 start -->
+        <section>
+            <div class="sec1">
+                <h1>PRODUCTS</h1>
+                <p id="sec1-p">Refined. Radiant. Remarkably You</p>
             </div>
-            <!-- Product Button Example -->
+        </section>
+        <!-- section1 end -->
+        <!-- section2 start -->
+        <div class="sec-2">
+            <p>Filter:</p>
+            <div class="filters-wrapper">
 
-
-            <!-- Popup -->
-            <div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
-
-            <div id="popupBox" class="popup-box">
-                <span class="close-btn" onclick="closePopup()">×</span>
-                <div class="popup-inner">
-                    <div class="popup-left">
-                        <img id="popupImg" src="" alt="Product Image" />
-                    </div>
-                    <div class="popup-right">
-                        <h2 id="popupTitle">Product Title</h2>
-                        <p class="popup-pricing">
-                            <span id="popupOldPrice" class="olde-price"></span>
-                            <span id="popupNewPrice" class="newe-price"></span>
-                            <span class="sale-badge">Sale</span>
-                        </p>
-                        <p class="popup-desc" id="popupDesc"></p>
-
-                        <div class="popup-sizes">
-                            <p>Size</p>
-                            <div class="size-options">
-                                <button class="size-button size40">40/6</button>
-                                <button class="size-button size41">41/7</button>
-                                <button class="size-button size42">42/8</button>
-                                <button class="size-button size43">43/9</button>
-                                <button class="size-button size44">44/10</button>
-                                <button class="size-button size45">45/11</button>
-
-                            </div>
+                <!-- Availability Filter -->
+                <div class="filter-container">
+                    <div class="filter-toggle" onclick="toggleDropdown('availabilityDropdown')">Availability <i
+                            class="fa-solid fa-caret-down"></i></div>
+                    <div class="filter-dropdown" id="availabilityDropdown">
+                        <div class="filter-header">
+                            <span id="availabilityCount">0 selected</span>
+                            <span class="reset" onclick="resetFilters('availability')">Reset</span>
                         </div>
-
-                        <div class="qty-box">
-                            <button class="sub" onclick="decreaseQty()">−</button>
-                            <input type="text" id="qtyInput" value="1" readonly />
-                            <button class="add" onclick="increaseQty()">+</button>
-                        </div>
-
-                        <div class="popup-buttons">
-                            <button id="popupAddToCart">Add to Cart</button>
-                            <a href="buy it.html"><button class="buy-now">Buy it now</button></a>
+                        <div class="filter-options" id="availabilityOptions">
+                            <label><input type="checkbox" onchange="updateSelected('availability')"> In stock
+                                (8)</label>
+                            <label><input type="checkbox" onchange="updateSelected('availability')"> Out of stock
+                                (8)</label>
                         </div>
                     </div>
                 </div>
+
+                <!-- Price Filter -->
+                <div class="filter-container">
+                    <div class="filter-toggle" onclick="toggleDropdown('priceDropdown')">Price <i
+                            class="fa-solid fa-caret-down"></i></div>
+                    <div class="filter-dropdown" id="priceDropdown" style="width: 300px;">
+                        <div class="filter-header">
+                            <span id="priceCount" style="font-size: 10px; margin-top: 3px;">The highest price is
+                                Rs.1,290.00</span>
+                            <span class="reset" onclick="resetFilters('price')">Reset</span>
+                        </div>
+                        <div class="filter-options" id="priceOptions">
+                            <label><input type="checkbox" onchange="updateSelected('price')"> Rs <input type="number"
+                                    placeholder="Form" style="width: 70px; height: 35px;padding-left: 15px; "></label>
+                            <label style="margin-left: 130px; margin-top: -42px;"><input type="checkbox"
+                                    onchange="updateSelected('price')">Rs <input type="number" placeholder="To"
+                                    style="width: 70px; height: 35px;padding-left: 25px;"> </label>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <script>
-                function openPopup(button) {
-                    const imgSrc = button.getAttribute("data-img");
-                    const title = button.getAttribute("data-title");
-                    const oldPrice = button.getAttribute("data-oldprice");
-                    const newPrice = button.getAttribute("data-newprice");
-                    const desc = button.getAttribute("data-desc");
+                function toggleDropdown(id) {
+                    document.getElementById(id).classList.toggle("show");
+                }
 
-                    document.getElementById("popupImg").src = imgSrc;
-                    document.getElementById("popupTitle").textContent = title;
-                    document.getElementById("popupOldPrice").textContent = oldPrice;
-                    document.getElementById("popupNewPrice").textContent = newPrice;
-                    document.getElementById("popupDesc").textContent = desc;
-                    document.getElementById("qtyInput").value = 1;
+                function updateSelected(type) {
+                    const checkboxes = document.querySelectorAll(`#${type}Options input[type="checkbox"]`);
+                    let count = 0;
+                    checkboxes.forEach(cb => {
+                        if (cb.checked) count++;
+                    });
+                    document.getElementById(`${type}Count`).innerText = `${count} selected`;
+                }
 
-                    // Add to cart button update
-                    const addBtn = document.getElementById("popupAddToCart");
-                    addBtn.onclick = function () {
-                        const qty = parseInt(document.getElementById("qtyInput").value);
-                        for (let i = 0; i < qty; i++) {
-                            addToCart(title, newPrice, imgSrc);
+                function resetFilters(type) {
+                    const checkboxes = document.querySelectorAll(`#${type}Options input[type="checkbox"]`);
+                    checkboxes.forEach(cb => cb.checked = false);
+                    updateSelected(type);
+                }
+
+                // Close dropdowns when clicking outside
+                document.addEventListener('click', function (event) {
+                    const dropdowns = document.querySelectorAll(".filter-dropdown");
+                    const toggles = document.querySelectorAll(".filter-toggle");
+                    let clickedInside = false;
+
+                    dropdowns.forEach((dropdown, i) => {
+                        if (dropdown.contains(event.target) || toggles[i].contains(event.target)) {
+                            clickedInside = true;
+                        } else {
+                            dropdown.classList.remove("show");
                         }
-                    };
-
-                    document.getElementById("popupOverlay").style.display = "block";
-                    document.getElementById("popupBox").style.display = "block";
-                }
-
-                function closePopup() {
-                    document.getElementById("popupOverlay").style.display = "none";
-                    document.getElementById("popupBox").style.display = "none";
-                }
-
-                function increaseQty() {
-                    let qty = document.getElementById("qtyInput");
-                    qty.value = parseInt(qty.value) + 1;
-                }
-
-                function decreaseQty() {
-                    let qty = document.getElementById("qtyInput");
-                    if (parseInt(qty.value) > 1) {
-                        qty.value = parseInt(qty.value) - 1;
-                    }
-                }
-            </script>
-            <script>
-                const sizeButtons = document.querySelectorAll('.size-button');
-
-                sizeButtons.forEach(button => {
-                    button.addEventListener('click', () => {
-                        // Remove active class from all buttons
-                        sizeButtons.forEach(btn => btn.classList.remove('active'));
-                        // Add active class to clicked button
-                        button.classList.add('active');
                     });
                 });
             </script>
-
-
-            <!-- Product Card 2 -->
-            <div class="product-card product-card2">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3059copy.webp?v=1740928168&width=990"
-                    alt="Black Slides" />
-                <div class="sale">Sale</div>
-                <h3>Black Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc=" soft slides for everyday comfort.">Choose options</button>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card product-card3">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
-                    alt="Brown Strap Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Strap Pure Leather Slides - HE - 4</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="product-card product-card4">
-                <img src="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533" alt="Ash Grey Slides" />
-                <div class="sale">Sale</div>
-                <h3>Ash Grey Strap Pure Leather Slides - HE - 4</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 3,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
-            <!-- Product Card 5 -->
-            <div class="product-card product-card1">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533" alt="Brown Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
-            <!-- Product Card 6 -->
-            <div class="product-card product-card1">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533" alt="Brown Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
-            <!-- Product Card 7 -->
-            <div class="product-card product-card1">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533" alt="Brown Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
-            <!-- Product Card 8 -->
-            <div class="product-card product-card1">
-                <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533" alt="Brown Slides" />
-                <div class="sale">Sale</div>
-                <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
-                <div class="price">
-                    <div class="old-price">Rs. 4,980.00 PKR</div>
-                    <div class="new-price">Rs. 2,490.00 PKR</div>
-                </div>
-                <button class="choose-btn" onclick="openPopup(this)"
-                    data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
-                    data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
-                    data-desc="Super soft slides for everyday comfort.">Choose options</button>
-            </div>
         </div>
-        <!-- section3 end -->
-        <!-- section4 start -->
-        <section>
-            <!-- Left Side Cart Drawer -->
-            <div id="cartDrawer" class="cart-drawer">
-                <div class="cart-header">
+        <div class="sec2-2">
+            <p>Sort by:</p>
 
-                    <button class="close-bt" onclick="closeCart()">×</button>
+            <p id="Sort">8 products</p>
+        </div>
+        <!-- section2 end -->
+        <!-- section3 start -->
+        <div class="product-grid-container">
+            <div class="product-grid">
+
+                <!-- Product Card 1 -->
+                <div class="product-card product-card1">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
                 </div>
-                <div class="shop">
-                    <p class="shop-p1">Your card is empty</p>
-                    <a href="catalog.html"> <button class="shop-btn">Countinue shopping</button></a>
-                    <p class="shop-p2">Have an account?</p>
-                    <p class="shop-p3"><a href="log in.html"><span class="shop-log">Log in</span></a> to check out
-                        faster.</p>
+                <!-- Product Button Example -->
+
+
+                <!-- Popup -->
+                <div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
+
+                <div id="popupBox" class="popup-box">
+                    <span class="close-btn" onclick="closePopup()">×</span>
+                    <div class="popup-inner">
+                        <div class="popup-left">
+                            <img id="popupImg" src="" alt="Product Image" />
+                        </div>
+                        <div class="popup-right">
+                            <h2 id="popupTitle">Product Title</h2>
+                            <p class="popup-pricing">
+                                <span id="popupOldPrice" class="olde-price"></span>
+                                <span id="popupNewPrice" class="newe-price"></span>
+                                <span class="sale-badge">Sale</span>
+                            </p>
+                            <p class="popup-desc" id="popupDesc"></p>
+
+                            <div class="popup-sizes">
+                                <p>Size</p>
+                                <div class="size-options">
+                                    <button class="size-button size40">40/6</button>
+                                    <button class="size-button size41">41/7</button>
+                                    <button class="size-button size42">42/8</button>
+                                    <button class="size-button size43">43/9</button>
+                                    <button class="size-button size44">44/10</button>
+                                    <button class="size-button size45">45/11</button>
+
+                                </div>
+                            </div>
+
+                            <div class="qty-box">
+                                <button class="sub" onclick="decreaseQty()">−</button>
+                                <input type="text" id="qtyInput" value="1" readonly />
+                                <button class="add" onclick="increaseQty()">+</button>
+                            </div>
+
+                            <div class="popup-buttons">
+                                <button id="popupAddToCart">Add to Cart</button>
+                                <a href="buy it.html"><button class="buy-now">Buy it now</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="cartItems" class="cart-items"></div>
-                <div class="cart-footer">
-                    <div id="totalPrice">Total: Rs. 0</div>
+                <script>
+                    function openPopup(button) {
+                        const imgSrc = button.getAttribute("data-img");
+                        const title = button.getAttribute("data-title");
+                        const oldPrice = button.getAttribute("data-oldprice");
+                        const newPrice = button.getAttribute("data-newprice");
+                        const desc = button.getAttribute("data-desc");
+
+                        document.getElementById("popupImg").src = imgSrc;
+                        document.getElementById("popupTitle").textContent = title;
+                        document.getElementById("popupOldPrice").textContent = oldPrice;
+                        document.getElementById("popupNewPrice").textContent = newPrice;
+                        document.getElementById("popupDesc").textContent = desc;
+                        document.getElementById("qtyInput").value = 1;
+
+                        // Add to cart button update
+                        const addBtn = document.getElementById("popupAddToCart");
+                        addBtn.onclick = function () {
+                            const qty = parseInt(document.getElementById("qtyInput").value);
+                            for (let i = 0; i < qty; i++) {
+                                addToCart(title, newPrice, imgSrc);
+                            }
+                        };
+
+                        document.getElementById("popupOverlay").style.display = "block";
+                        document.getElementById("popupBox").style.display = "block";
+                    }
+
+                    function closePopup() {
+                        document.getElementById("popupOverlay").style.display = "none";
+                        document.getElementById("popupBox").style.display = "none";
+                    }
+
+                    function increaseQty() {
+                        let qty = document.getElementById("qtyInput");
+                        qty.value = parseInt(qty.value) + 1;
+                    }
+
+                    function decreaseQty() {
+                        let qty = document.getElementById("qtyInput");
+                        if (parseInt(qty.value) > 1) {
+                            qty.value = parseInt(qty.value) - 1;
+                        }
+                    }
+                </script>
+                <script>
+                    const sizeButtons = document.querySelectorAll('.size-button');
+
+                    sizeButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Remove active class from all buttons
+                            sizeButtons.forEach(btn => btn.classList.remove('active'));
+                            // Add active class to clicked button
+                            button.classList.add('active');
+                        });
+                    });
+                </script>
+
+
+                <!-- Product Card 2 -->
+                <div class="product-card product-card2">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3059copy.webp?v=1740928168&width=990"
+                        alt="Black Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Black Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc=" soft slides for everyday comfort.">Choose options</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card product-card3">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Strap Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Strap Pure Leather Slides - HE - 4</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card product-card4">
+                    <img src="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        alt="Ash Grey Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Ash Grey Strap Pure Leather Slides - HE - 4</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 3,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product-card product-card1">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="product-card product-card1">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="product-card product-card1">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="product-card product-card1">
+                    <img src="https://joggy.pk/cdn/shop/files/1H5A3247.webp?v=1740929729&width=533"
+                        alt="Brown Slides" />
+                    <div class="sale">Sale</div>
+                    <h3>Brown Pure Leather Nike Slides - HE - 3</h3>
+                    <div class="price">
+                        <div class="old-price">Rs. 4,980.00 PKR</div>
+                        <div class="new-price">Rs. 2,490.00 PKR</div>
+                    </div>
+                    <button class="choose-btn" onclick="openPopup(this)"
+                        data-img="https://joggy.pk/cdn/shop/files/IMG_8590.webp?v=1740928767&width=533"
+                        data-title="Ash Grey Slides" data-oldprice="Rs. 3,980.00 PKR" data-newprice="Rs. 2,490.00 PKR"
+                        data-desc="Super soft slides for everyday comfort.">Choose options</button>
                 </div>
             </div>
+            <!-- section3 end -->
+            <!-- section4 start -->
+            <section>
+                <!-- Left Side Cart Drawer -->
+                <div id="cartDrawer" class="cart-drawer">
+                    <div class="cart-header">
 
-        </section>
+                        <button class="close-bt" onclick="closeCart()">×</button>
+                    </div>
+                    <div class="shop">
+                        <p class="shop-p1">Your card is empty</p>
+                        <a href="catalog.html"> <button class="shop-btn">Countinue shopping</button></a>
+                        <p class="shop-p2">Have an account?</p>
+                        <p class="shop-p3"><a href="log in.html"><span class="shop-log">Log in</span></a> to check out
+                            faster.</p>
+                    </div>
 
-
-        <!-- section4 end -->
-
-        <footer>
-            <div class="main-footer">
-                <div class="footer">
-                    <h4 id="foo-2" style="color: white;">Our Policy</h4> <br class="only-desktop"> <br
-                        class="only-desktop">
-                    <a href="Return Policy.html" style="color: white; text-decoration: none;">
-                        <p id="foo-2">Return & Exchange Policy</p>
-                    </a>
-                    <a href="shipping.html" style="color: white; text-decoration: none;">
-                        <p id="foo-2">Shipping Policy</p>
-                    </a>
-                    <a href="privacy.html" style="color: white; text-decoration: none;">
-                        <p id="foo-2">Privacy policy</p>
-                    </a>
-                    <a href="contact.html" style="color: white; text-decoration: none;">
-                        <p id="foo-2">Contact Information</p>
-                    </a>
-                    <a href="search.html" style="color: white; text-decoration: none;">
-                        <p id="foo-2">Search</p>
-                    </a>
-
+                    <div id="cartItems" class="cart-items"></div>
+                    <div class="cart-footer">
+                        <div id="totalPrice">Total: Rs. 0</div>
+                    </div>
                 </div>
-                <div class="footer1">
 
-                    <h4 id="foo-7" style="color: white;">Our Mission</h4> <br class="only-desktop"> <br
-                        class="only-desktop">
-                    <p>Our Mission is to Provide Our Customers Foot Wear in Reasonable Price. <br> We Deliver at
-                        Yourdoorsteps</p>
-                    <p>Our Market Place is Pakistan. Customer Living in any Location of Pakistan <br> can Get their
-                        Delivery Free Of Cost Within Selected Days.</p>
-                </div>
-                <hr id="foo-hr">
-                <div class="footer2">
-                    <p>© 2025, Lune & Linen – Luxury That Moves With You</p>
-                    <ul id="foo-ul">
+            </section>
+
+
+            <!-- section4 end -->
+
+            <footer>
+                <div class="main-footer">
+                    <div class="footer">
+                        <h4 id="foo-2" style="color: white;">Our Policy</h4> <br class="only-desktop"> <br
+                            class="only-desktop">
                         <a href="Return Policy.html" style="color: white; text-decoration: none;">
-                            <li id="foo-1">Refund policy</li>
-                        </a>
-                        <a href="privacy.html" style="color: white; text-decoration: none;">
-                            <li id="foo-1">Privacy policy</li>
-                        </a>
-                        <a href="term.html" style="color: white; text-decoration: none;">
-                            <li id="foo-1">Terms of service</li>
+                            <p id="foo-2">Return & Exchange Policy</p>
                         </a>
                         <a href="shipping.html" style="color: white; text-decoration: none;">
-                            <li id="foo-1">Shipping policy</li>
+                            <p id="foo-2">Shipping Policy</p>
+                        </a>
+                        <a href="privacy.html" style="color: white; text-decoration: none;">
+                            <p id="foo-2">Privacy policy</p>
                         </a>
                         <a href="contact.html" style="color: white; text-decoration: none;">
-                            <li id="foo-1">Contact information</li>
+                            <p id="foo-2">Contact Information</p>
                         </a>
-                    </ul>
+                        <a href="search.html" style="color: white; text-decoration: none;">
+                            <p id="foo-2">Search</p>
+                        </a>
+
+                    </div>
+                    <div class="footer1">
+
+                        <h4 id="foo-7" style="color: white;">Our Mission</h4> <br class="only-desktop"> <br
+                            class="only-desktop">
+                        <p>Our Mission is to Provide Our Customers Foot Wear in Reasonable Price. <br> We Deliver at
+                            Yourdoorsteps</p>
+                        <p>Our Market Place is Pakistan. Customer Living in any Location of Pakistan <br> can Get their
+                            Delivery Free Of Cost Within Selected Days.</p>
+                    </div>
+                    <hr id="foo-hr">
+                    <div class="footer2">
+                        <p>© 2025, Lune & Linen – Luxury That Moves With You</p>
+                        <ul id="foo-ul">
+                            <a href="Return Policy.html" style="color: white; text-decoration: none;">
+                                <li id="foo-1">Refund policy</li>
+                            </a>
+                            <a href="privacy.html" style="color: white; text-decoration: none;">
+                                <li id="foo-1">Privacy policy</li>
+                            </a>
+                            <a href="term.html" style="color: white; text-decoration: none;">
+                                <li id="foo-1">Terms of service</li>
+                            </a>
+                            <a href="shipping.html" style="color: white; text-decoration: none;">
+                                <li id="foo-1">Shipping policy</li>
+                            </a>
+                            <a href="contact.html" style="color: white; text-decoration: none;">
+                                <li id="foo-1">Contact information</li>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <!-- section5 end -->
-        <script>
-            let cart = [];
+            </footer>
+            <!-- section5 end -->
+            <script>
+                let cart = [];
 
-            function openCart() {
-                document.getElementById("cartDrawer").classList.add("show");
-                updateCartDisplay();
-            }
+                function openCart() {
+                    document.getElementById("cartDrawer").classList.add("show");
+                    updateCartDisplay();
+                }
 
-            function closeCart() {
-                document.getElementById("cartDrawer").classList.remove("show");
-            }
+                function closeCart() {
+                    document.getElementById("cartDrawer").classList.remove("show");
+                }
 
-            function addToCart(productName, price, imageUrl) {
-                cart.push({ name: productName, price: price, image: imageUrl });
-                updateCartDisplay();
-                openCart();
-            }
+                function addToCart(productName, price, imageUrl) {
+                    cart.push({ name: productName, price: price, image: imageUrl });
+                    updateCartDisplay();
+                    openCart();
+                }
 
-            function removeFromCart(index) {
-                cart.splice(index, 1);
-                updateCartDisplay();
-            }
+                function removeFromCart(index) {
+                    cart.splice(index, 1);
+                    updateCartDisplay();
+                }
 
-            function updateCartDisplay() {
-                const cartItemsDiv = document.getElementById("cartItems");
-                const cartFooter = document.querySelector(".cart-footer");
-                const shopDiv = document.querySelector(".shop");
+                function updateCartDisplay() {
+                    const cartItemsDiv = document.getElementById("cartItems");
+                    const cartFooter = document.querySelector(".cart-footer");
+                    const shopDiv = document.querySelector(".shop");
 
-                cartItemsDiv.innerHTML = "";
+                    cartItemsDiv.innerHTML = "";
 
-                if (cart.length > 0) {
-                    let total = 0;
+                    if (cart.length > 0) {
+                        let total = 0;
 
-                    cart.forEach((item, index) => {
-                        total += parseInt(item.price.replace(/\D/g, ""));
-                        cartItemsDiv.innerHTML += `
+                        cart.forEach((item, index) => {
+                            total += parseInt(item.price.replace(/\D/g, ""));
+                            cartItemsDiv.innerHTML += `
           <div class="cart-item" style="display: flex; align-items: center; margin-bottom: 10px;">
             <img src="${item.image}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 10px; margin-right: 10px;">
             <div>
@@ -556,17 +567,18 @@
             </div>
           </div>
         `;
-                    });
+                        });
 
-                    document.getElementById("totalPrice").innerText = `Total: Rs. ${total}`;
-                    cartFooter.style.display = "block";
-                    shopDiv.style.display = "none"; // hide shop when cart has items
-                } else {
-                    cartFooter.style.display = "none";
-                    shopDiv.style.display = "block"; // show shop when cart is empty
+                        document.getElementById("totalPrice").innerText = `Total: Rs. ${total}`;
+                        cartFooter.style.display = "block";
+                        shopDiv.style.display = "none"; // hide shop when cart has items
+                    } else {
+                        cartFooter.style.display = "none";
+                        shopDiv.style.display = "block"; // show shop when cart is empty
+                    }
                 }
-            }
-        </script>
+            </script>
+        </div>
 
 
 </body>

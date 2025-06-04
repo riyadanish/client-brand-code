@@ -1,7 +1,93 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+
 }
+
+.ibm-plex-serif-thin {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.ibm-plex-serif-light {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 
 img {
     width: 100%;
@@ -66,13 +152,6 @@ img {
 #bill {
     margin-left: 450px;
 }
-
-
-
-
-
-
-
 
 form {
     max-width: 800px;
@@ -142,20 +221,21 @@ button:hover {
 #fname {
     width: 240px;
 }
-#city{
-   width: 240px; 
+
+#city {
+    width: 240px;
 }
-#postal{
-     width: 250px;
+
+#postal {
+    width: 250px;
     position: absolute;
     left: 720px;
-    top: 1112px;
+    top: 1183px;
 }
-#phone{
+
+#phone {
     margin-top: -200px;
 }
-
-
 
 .main-footer {
     background: linear-gradient(to right, #111, #444);
@@ -165,6 +245,7 @@ button:hover {
     position: absolute;
     left: -10px;
     margin-top: 90px;
+    font-weight: 400;
 }
 
 .footer {
@@ -242,18 +323,19 @@ button:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 751px) {
     .footer {
         position: static;
         margin-bottom: 20px;
         font-size: 10px;
+        margin-left: 30px;
     }
 
     .footer1 {
         position: static;
         margin-bottom: 20px;
         margin-left: 320px;
-        margin-top: -220px;
+        margin-top: -180px;
         font-size: 10px;
     }
 
@@ -263,6 +345,7 @@ button:hover {
         align-items: center;
         font-size: 12px;
         margin-top: 30px;
+
     }
 
     #foo-ul {
@@ -274,6 +357,7 @@ button:hover {
         height: auto;
         padding: 30px 20px;
         position: relative;
+        width: 100%;
     }
 
     #foo-hr {
@@ -296,6 +380,12 @@ button:hover {
 
     .footer2 {
         font-size: 10px;
+    }
+
+    .main-footer {
+        height: auto;
+        position: relative;
+        width: 97%;
     }
 
     #foo-ul {
@@ -328,5 +418,278 @@ button:hover {
 
     #foo-ul {
         font-size: 10px;
+    }
+}
+
+#email {
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+#email1 {
+    margin-left: -540px;
+}
+
+@media (max-width: 1075px) {
+    .form-group {
+        margin-left: 100px;
+    }
+
+    #lname {
+        position: absolute;
+        width: 100%;
+        margin-left: -340px;
+        width: 220px;
+    }
+
+    #postal {
+        position: absolute;
+        width: 100%;
+        margin-left: -340px;
+        width: 240px;
+        top: 1133px;
+    }
+
+    #form-btn {
+        margin-left: 100px;
+    }
+
+    .cash2 {
+        margin-left: 100px;
+    }
+
+    #bill {
+        margin-left: 100px;
+    }
+
+    .main {
+        margin-left: 100px;
+    }
+
+    #LOGO1 {
+        margin-left: 430px;
+    }
+
+    .img2 {
+        left: 390px;
+    }
+}
+
+@media (max-width: 751px) {
+    .form-group {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #fname {
+        width: 33%;
+        position: static;
+        margin-top: 5px;
+    }
+
+    #lname {
+        width: 33%;
+        position: absolute;
+        margin-left: -420px;
+        margin-top: 5px;
+    }
+
+    #address {
+        width: 520px;
+    }
+
+    #place {
+        width: 520px;
+    }
+
+    #postal {
+
+        width: 33%;
+        position: absolute;
+        margin-left: -420px;
+        margin-top: 5px;
+    }
+
+    #phone {
+        width: 520px;
+    }
+
+    #country {
+        width: 550px;
+    }
+
+    #form-btn {
+        margin-left: 20px;
+    }
+
+
+    #main-inp {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .cash2 {
+        margin-left: 40px;
+    }
+
+    #bill {
+        margin-left: 20px;
+    }
+
+    .main {
+        margin-left: 40px;
+    }
+
+    #LOGO1 {
+        margin-left: 260px;
+        margin-top: -80px;
+        color: white;
+    }
+
+    .img2 {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: -10px;
+        left: 220px;
+    }
+}
+
+@media (max-width: 500px) {
+    #LOGO1 {
+        margin-left: 140px;
+        margin-top: -80px;
+        color: white;
+    }
+
+    .img2 {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: -10px;
+        left: 100px;
+    }
+
+    .cash {
+        width: 300px;
+    }
+
+    .cash2 {
+        width: 253px;
+        padding-left: 76px;
+        margin-left: 20px;
+    }
+
+    #lname {
+        width: 36%;
+        position: absolute;
+        margin-left: -500px;
+        margin-top: 5px;
+    }
+
+    #address {
+        width: 380px;
+    }
+
+    #place {
+        width: 380px;
+    }
+
+    #postal {
+
+        width: 35%;
+        position: absolute;
+        margin-left: -490px;
+        margin-top: -40px;
+    }
+
+    #city {
+        width: 35%;
+
+    }
+
+    #phone {
+        width: 380px;
+    }
+
+    #country {
+        width: 400px;
+    }
+
+    .main {
+        margin-left: 20px;
+    }
+
+    #main-log {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width: 455px) {
+    #LOGO1 {
+        font-size: 20px;
+        position: absolute;
+        left: -20px;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        top: 20px;
+        left: 80px;
+    }
+
+    .cash {
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .cash2 {
+        padding-left: 70px;
+        font-size: 14px;
+        width: 210px;
+    }
+
+    #country {
+        width: 323px;
+    }
+
+    #lname {
+        width: 30%;
+        position: absolute;
+        margin-left: -529px;
+        margin-top: 5px;
+    }
+
+    #address {
+        width: 300px;
+    }
+
+    #place {
+        width: 300px;
+    }
+
+    #postal {
+
+        width: 32%;
+        position: absolute;
+        margin-left: -530px;
+        margin-top: 10px;
+    }
+
+    #city {
+        width: 32%;
+
+    }
+
+    #phone {
+        width: 300px;
     }
 }

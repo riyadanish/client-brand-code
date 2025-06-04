@@ -1,6 +1,89 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    
+}
+.ibm-plex-serif-thin {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-serif-light {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .start {
@@ -176,6 +259,7 @@ header {
 
 #sec1-p {
     margin-top: 30px;
+    font-weight: 400;
 }
 
 /* Tablet: 1024px and below */
@@ -556,6 +640,7 @@ header {
     padding-top: 30px;
     padding-left: 190px;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .sec2-2 {
@@ -564,6 +649,7 @@ header {
     margin-top: -30px;
     padding-left: 900px;
     font-size: 12px;
+    font-weight: 400;
 }
 
 /* sec2 end */
@@ -821,6 +907,7 @@ header {
     position: absolute;
     left: -10px;
     margin-top: 30px;
+    font-weight: 400;
 }
 
 .footer {
@@ -1294,3 +1381,4 @@ header {
     background-color: black;
     color: white;
   }
+ 

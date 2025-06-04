@@ -1,7 +1,91 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    
 }
+.ibm-plex-serif-thin {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-serif-light {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 .start {
     background-color: rgb(154, 7, 7);
@@ -182,6 +266,7 @@ header {
 
 #sec1-p {
     margin-top: 30px;
+    font-weight: 400;
 }
 
 /* Tablet: 1024px and below */
@@ -596,6 +681,7 @@ header {
     box-sizing: border-box;
     padding-top: 40px;
     margin-left: 70px;
+    font-weight: 400;
 }
 
 .main-img>div {
@@ -914,6 +1000,7 @@ header {
 #men-p {
     padding-left: 70px;
     color: rgb(62, 51, 51);
+    font-weight: 400;
 }
 
 /* -------- Tablet View (768px to 992px) -------- */
@@ -1159,19 +1246,19 @@ span {
     margin-left: 110px;
 }
 
-#old-price {
+#old-price90 {
     text-decoration: line-through;
     color: white;
     font-size: 20px;
-    padding-left: 800px;
+    padding-left: 1000px;
     margin-top: 20px;
 }
 
-#new-price {
+#new-price91 {
     font-weight: bold;
     color: white;
     font-size: 20px;
-    padding-left: 1000px;
+    padding-left: 900px;
     position: absolute;
     margin-top: -30px;
 
@@ -1326,7 +1413,7 @@ span {
     height: 50px;
     background-color: black;
     border-radius: 40px;
-    padding: 13px 150px;
+    padding: 13px 100px;
     box-shadow: -5px 5px 10px white;
 }
 

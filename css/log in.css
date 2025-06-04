@@ -1,47 +1,141 @@
  body {
-      font-family: Arial, sans-serif;
-     background-image: url(../images/top-view-dry-leaves-with-copy-space.jpg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-size: 100%;
-    }
-    form {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #aaa;
-      width: 320px;
-    }
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    label {
-      font-size: 0.9rem;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background: black;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    .extra {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .message {
-      margin-top: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
+   background-image: url(../images/top-view-dry-leaves-with-copy-space.jpg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-size: 100%;
+ }
+
+ .ibm-plex-serif-thin {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-extralight {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 200;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-light {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-regular {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-medium {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-semibold {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-bold {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ .ibm-plex-serif-thin-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 100;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-extralight-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 200;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-light-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 300;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-regular-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-medium-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 500;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-semibold-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 600;
+   font-style: italic;
+ }
+
+ .ibm-plex-serif-bold-italic {
+   font-family: "IBM Plex Serif", serif;
+   font-weight: 700;
+   font-style: italic;
+ }
+
+ form {
+   background: white;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 0 10px #aaa;
+   width: 320px;
+ }
+
+ input[type="text"],
+ input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin: 0.5rem 0;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   font-weight: 400;
+ }
+
+ label {
+   font-size: 0.9rem;
+   font-weight: 400;
+ }
+
+ button {
+   width: 100%;
+   padding: 10px;
+   background: black;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   margin-top: 1rem;
+   cursor: pointer;
+   font-weight: 400;
+ }
+
+ .extra {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 400;
+ }
+
+ .message {
+   margin-top: 10px;
+   text-align: center;
+   font-weight: bold;
+   font-weight: 400;
+ }

@@ -244,10 +244,6 @@ header {
 .side-menu.open {
     left: 0;
 }
-
-
-
-
 .sec1 {
     width: 100%;
     height: 150px;
@@ -1279,6 +1275,462 @@ header {
     cursor: pointer;
 }
 
+@media (max-width: 930px) {
+
+    .olde-price {
+        text-decoration: line-through;
+        color: gray;
+        margin-left: 2px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .newe-price {
+        font-size: 13px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    .sale-badge {
+        background-color: red;
+        color: white;
+        padding: 2px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-left: 190px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .popup-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 30px;
+        width: 80%;
+        max-width: 1000px;
+        max-height: 90vh;
+        overflow-y: auto;
+        z-index: 1000;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .popup-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .popup-left img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left: -40px;
+    }
+
+    .popup-right {
+        flex: 1;
+        margin-top: 400px;
+        margin-left: -380px;
+    }
+
+    .popup-pricing {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .olde-price {
+        text-decoration: line-through;
+        color: gray;
+        margin-left: -3px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .newe-price {
+
+        font-weight: bold;
+        margin-left: 30px;
+        position: absolute;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .sale-badge {
+        display: none;
+    }
+
+    .popup-desc {
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .popup-sizes p,
+    .popup-quantity p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .size-options button {
+        border: 1px solid #333;
+        border-radius: 30px;
+        padding: 6px 14px;
+        margin: 5px;
+        cursor: pointer;
+        background: white;
+    }
+
+    .qty-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .qty-box input {
+        width: 40px;
+        text-align: center;
+
+    }
+
+    .popup-buttons {
+        margin-top: 20px;
+    }
+
+    .popup-buttons button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .add-to-cart {
+        background: white;
+        border: 1px solid #333;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .buy-now {
+        background: black;
+        color: white;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .popup-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 30px;
+        width: 80%;
+        max-width: 1000px;
+        max-height: 90vh;
+        overflow-y: auto;
+        z-index: 1000;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .popup-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .popup-left img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left: -40px;
+    }
+
+    .popup-right {
+        flex: 1;
+        margin-top: 400px;
+        margin-left: -380px;
+    }
+
+    .popup-pricing {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .olde-price {
+        text-decoration: line-through;
+        color: gray;
+        margin-left: -3px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .newe-price {
+
+        font-weight: bold;
+        margin-left: 30px;
+        position: absolute;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .sale-badge {
+        display: none;
+    }
+
+    .popup-desc {
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .popup-sizes p,
+    .popup-quantity p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .size-options button {
+        border: 1px solid #333;
+        border-radius: 30px;
+        padding: 6px 14px;
+        margin: 5px;
+        cursor: pointer;
+        background: white;
+    }
+
+    .qty-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .qty-box input {
+        width: 40px;
+        text-align: center;
+
+    }
+
+    .popup-buttons {
+        margin-top: 20px;
+    }
+
+    .popup-buttons button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .add-to-cart {
+        background: white;
+        border: 1px solid #333;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .buy-now {
+        background: black;
+        color: white;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 455px) {
+
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .popup-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 30px;
+        width: 90%;
+        max-width: 1000px;
+        max-height: 90vh;
+        overflow-y: auto;
+        z-index: 1000;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .popup-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .popup-left img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left: -40px;
+    }
+
+    .popup-right {
+        flex: 1;
+        margin-top: 400px;
+        margin-left: -380px;
+    }
+
+    .popup-pricing {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .olde-price {
+        text-decoration: line-through;
+        color: gray;
+        margin-left: -3px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .newe-price {
+
+        font-weight: bold;
+        margin-left: 30px;
+        position: absolute;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .sale-badge {
+        display: none;
+    }
+
+    .popup-desc {
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .popup-sizes p,
+    .popup-quantity p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .size-options button {
+        border: 1px solid #333;
+        border-radius: 30px;
+        padding: 6px 14px;
+        margin: 5px;
+        cursor: pointer;
+        background: white;
+    }
+
+    .qty-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .qty-box input {
+        width: 40px;
+        text-align: center;
+
+    }
+
+    .popup-buttons {
+        margin-top: 20px;
+    }
+
+    .popup-buttons button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .add-to-cart {
+        background: white;
+        border: 1px solid #333;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .buy-now {
+        background: black;
+        color: white;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
 
 .cart-drawer {
     position: fixed;
@@ -1334,6 +1786,7 @@ header {
     color: white;
     box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
     margin-top: 25px;
+    font-weight: 200;
 }
 
 .shop-p1 {
@@ -1345,6 +1798,7 @@ header {
 .shop-p2 {
     margin-top: 40px;
     font-size: 20px;
+     font-weight: 200;
 
 }
 

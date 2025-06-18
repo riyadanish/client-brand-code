@@ -536,7 +536,9 @@ header {
         /* ✅ This is good */
         flex-direction: column;
     }
-
+#search{
+    display: none;
+}
 
     .nav-links {
         display: none;
@@ -867,13 +869,14 @@ header {
 
 .shop-p1 {
     font-size: 35px;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: -70px;
 }
 
 .shop-p2 {
     margin-top: 40px;
     font-size: 20px;
+    font-weight: 400;
 
 }
 
@@ -881,6 +884,7 @@ header {
     text-decoration: underline;
     cursor: pointer;
     color: black;
+    font-weight: 400;
 }
 
 .cart-footer {
@@ -924,3 +928,79 @@ header {
     font-weight: 400;
 }
 
+@media (max-width: 1075px){
+    .jewelry h1{
+    margin-left: 50px;
+}
+#pip{
+    margin-left: 50px;
+    font-weight: 400;
+}
+#pipp{
+    margin-left: 50px;
+    width: 600px;
+    font-weight: 400;
+}
+}
+@media (max-width: 831px){
+      .jewelry h1{
+    margin-left: 50px;
+}
+#pip{
+    margin-left: 50px;
+    font-weight: 400;
+}
+#pipp{
+    margin-left: 50px;
+    width: 600px;
+    font-weight: 400;
+}
+}
+@media (max-width: 716px){
+          .jewelry h1{
+    margin-left: 50px;
+
+}
+#pip{
+    margin-left: 50px;
+    font-weight: 400;
+    
+}
+#pipp{
+    margin-left: 50px;
+    width: 400px;
+}
+}
+@media (max-width: 537px){
+          .jewelry h1{
+    margin-left: 50px;
+
+}
+#pip{
+    margin-left: 50px;
+    font-weight: 400;
+    
+}
+#pipp{
+    margin-left: 50px;
+    width: 400px;
+}
+} 
+@media (max-width: 492px){
+     
+   .jewelry h1{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+#pip{
+    margin-left: 20px;
+    font-weight: 400;
+    
+}
+#pipp{
+    margin-left: 20px;
+    width: 300px;
+}
+} 

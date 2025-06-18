@@ -619,6 +619,9 @@ header {
     .nav-links {
         display: none;
     }
+    #search{
+        display: none;
+    }
 
     .nav-icons {
         font-size: 14px;
@@ -934,6 +937,243 @@ header {
 
     .contact h1 {
         font-size: 70px;
+    }
+
+    .contact p {
+        margin-top: 50px;
+    }
+
+    .contact button {
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+@media (max-width: 767px){
+.contact {
+        margin-left: 100px;
+        margin-top: 50px;
+
+    }
+
+    #name {
+        width: 235px;
+    }
+
+    #email {
+        width: 235px;
+
+
+    }
+
+    #phone {
+        width: 500px;
+
+    }
+
+    #comment {
+        width: 500px;
+
+    }
+
+    .contact h1 {
+        font-size: 70px;
+    }
+
+    .contact p {
+        margin-top: 50px;
+    }
+
+    .contact button {
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+@media (max-width: 615px){
+.contact {
+        margin-left: 50px;
+        margin-top: 50px;
+
+    }
+
+    #name {
+        width: 235px;
+    }
+
+    #email {
+        width: 235px;
+        margin-top: 20px;
+    }
+
+    #phone {
+        width: 500px;
+
+    }
+
+    #comment {
+        width: 500px;
+
+    }
+
+    .contact h1 {
+        font-size: 50px;
+    }
+
+    .contact p {
+        margin-top: 50px;
+    }
+
+    .contact button {
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+@media (max-width: 561px){
+.contact {
+        margin-left: 50px;
+        margin-top: 50px;
+
+    }
+
+    #name {
+        width: 400px;
+        height: 60px;
+    }
+
+    #email {
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 60px;
+    
+        
+    }
+
+    #phone {
+        width: 400px;
+
+    }
+
+    #comment {
+        width: 400px;
+
+    }
+
+    .contact h1 {
+        font-size: 50px;
+    }
+
+    .contact p {
+        margin-top: 50px;
+    }
+
+    .contact button {
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+@media (max-width: 468px){
+.contact {
+        margin-left: 20px;
+        margin-top: 50px;
+
+    }
+
+    #name {
+        width: 400px;
+        height: 60px;
+    }
+
+    #email {
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 60px;
+    
+        
+    }
+
+    #phone {
+        width: 400px;
+
+    }
+
+    #comment {
+        width: 400px;
+
+    }
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        margin-top: 50px;
+    }
+
+    .contact button {
+        width: 180px;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 422px){
+.contact {
+        margin-left: 20px;
+        margin-top: 50px;
+
+    }
+
+    #name {
+        width: 300px;
+        height: 60px;
+    }
+
+    #email {
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 60px;
+    
+        
+    }
+
+    #phone {
+        width: 300px;
+
+    }
+
+    #comment {
+        width: 300px;
+
+    }
+
+    .contact h1 {
+        font-size: 40px;
     }
 
     .contact p {

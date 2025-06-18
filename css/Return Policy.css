@@ -245,10 +245,6 @@ header {
 .side-menu.open {
     left: 0;
 }
-
-
-
-
 .sec1 {
     width: 100%;
     height: 150px;
@@ -543,7 +539,9 @@ header {
     .nav-links {
         display: none;
     }
-
+#search{
+    display: none;
+}
     .nav-icons {
         font-size: 14px;
         gap: 20px;
@@ -918,3 +916,43 @@ color: white;
   .main h1{
     font-size: 60px;
   }
+ @media (max-width: 1075px){
+    .main{
+       margin-left: 20px;
+       width: 900px;
+  }
+}
+@media (max-width: 831px){
+    .main{
+       margin-left: 20px;
+       width: 700px;
+  }
+}
+@media (max-width: 730px){
+     .main{
+       margin-left: 20px;
+       width: 500px;
+  }
+    .main h1{
+    font-size: 20px;
+  }
+}
+@media (max-width: 537px){
+     .main{
+       margin-left: 20px;
+       width: 400px;
+  }
+    .main h1{
+    font-size: 20px;
+  }
+} 
+@media (max-width: 407px){
+     .main{
+       margin-left: 20px;
+       width: 300px;
+       justify-content: left;
+  }
+    .main h1{
+    font-size: 25px;
+  }
+} 

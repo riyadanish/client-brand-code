@@ -619,7 +619,8 @@ header {
     .nav-links {
         display: none;
     }
-    #search{
+
+    #search {
         display: none;
     }
 
@@ -953,8 +954,9 @@ header {
         box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
     }
 }
-@media (max-width: 767px){
-.contact {
+
+@media (max-width: 767px) {
+    .contact {
         margin-left: 100px;
         margin-top: 50px;
 
@@ -998,8 +1000,9 @@ header {
         box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
     }
 }
-@media (max-width: 615px){
-.contact {
+
+@media (max-width: 615px) {
+    .contact {
         margin-left: 50px;
         margin-top: 50px;
 
@@ -1042,8 +1045,9 @@ header {
         box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
     }
 }
-@media (max-width: 561px){
-.contact {
+
+@media (max-width: 561px) {
+    .contact {
         margin-left: 50px;
         margin-top: 50px;
 
@@ -1059,8 +1063,8 @@ header {
         margin-top: 20px;
         margin-left: 0px;
         height: 60px;
-    
-        
+
+
     }
 
     #phone {
@@ -1091,8 +1095,9 @@ header {
         box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.2);
     }
 }
-@media (max-width: 468px){
-.contact {
+
+@media (max-width: 468px) {
+    .contact {
         margin-left: 20px;
         margin-top: 50px;
 
@@ -1108,8 +1113,8 @@ header {
         margin-top: 20px;
         margin-left: 0px;
         height: 60px;
-    
-        
+
+
     }
 
     #phone {
@@ -1141,8 +1146,8 @@ header {
     }
 }
 
-@media (max-width: 422px){
-.contact {
+@media (max-width: 422px) {
+    .contact {
         margin-left: 20px;
         margin-top: 50px;
 
@@ -1158,8 +1163,8 @@ header {
         margin-top: 20px;
         margin-left: 0px;
         height: 60px;
-    
-        
+
+
     }
 
     #phone {

@@ -1,88 +1,89 @@
 body {
     margin: 0;
 }
+
 .ibm-plex-serif-thin {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .ibm-plex-serif-extralight {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 200;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .ibm-plex-serif-light {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .ibm-plex-serif-regular {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .ibm-plex-serif-medium {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .ibm-plex-serif-semibold {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .ibm-plex-serif-bold {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .ibm-plex-serif-thin-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 100;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .ibm-plex-serif-extralight-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 200;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .ibm-plex-serif-light-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 300;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .ibm-plex-serif-regular-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .ibm-plex-serif-medium-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 500;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .ibm-plex-serif-semibold-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 600;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .ibm-plex-serif-bold-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .start {
@@ -536,9 +537,10 @@ header {
         /* ✅ This is good */
         flex-direction: column;
     }
-#search{
-    display: none;
-}
+
+    #search {
+        display: none;
+    }
 
     .nav-links {
         display: none;
@@ -915,92 +917,109 @@ header {
     background-color: black;
     color: white;
 }
-.jewelry h1{
+
+.jewelry h1 {
     margin-left: 400px;
 }
-#pip{
+
+#pip {
     margin-left: 400px;
     font-weight: 400;
 }
-#pipp{
+
+#pipp {
     margin-left: 400px;
     width: 600px;
     font-weight: 400;
 }
 
-@media (max-width: 1075px){
-    .jewelry h1{
-    margin-left: 50px;
-}
-#pip{
-    margin-left: 50px;
-    font-weight: 400;
-}
-#pipp{
-    margin-left: 50px;
-    width: 600px;
-    font-weight: 400;
-}
-}
-@media (max-width: 831px){
-      .jewelry h1{
-    margin-left: 50px;
-}
-#pip{
-    margin-left: 50px;
-    font-weight: 400;
-}
-#pipp{
-    margin-left: 50px;
-    width: 600px;
-    font-weight: 400;
-}
-}
-@media (max-width: 716px){
-          .jewelry h1{
-    margin-left: 50px;
+@media (max-width: 1075px) {
+    .jewelry h1 {
+        margin-left: 50px;
+    }
 
-}
-#pip{
-    margin-left: 50px;
-    font-weight: 400;
-    
-}
-#pipp{
-    margin-left: 50px;
-    width: 400px;
-}
-}
-@media (max-width: 537px){
-          .jewelry h1{
-    margin-left: 50px;
+    #pip {
+        margin-left: 50px;
+        font-weight: 400;
+    }
 
+    #pipp {
+        margin-left: 50px;
+        width: 600px;
+        font-weight: 400;
+    }
 }
-#pip{
-    margin-left: 50px;
-    font-weight: 400;
-    
-}
-#pipp{
-    margin-left: 50px;
-    width: 400px;
-}
-} 
-@media (max-width: 492px){
-     
-   .jewelry h1{
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 900;
 
+@media (max-width: 831px) {
+    .jewelry h1 {
+        margin-left: 50px;
+    }
+
+    #pip {
+        margin-left: 50px;
+        font-weight: 400;
+    }
+
+    #pipp {
+        margin-left: 50px;
+        width: 600px;
+        font-weight: 400;
+    }
 }
-#pip{
-    margin-left: 20px;
-    font-weight: 400;
-    
+
+@media (max-width: 716px) {
+    .jewelry h1 {
+        margin-left: 50px;
+
+    }
+
+    #pip {
+        margin-left: 50px;
+        font-weight: 400;
+
+    }
+
+    #pipp {
+        margin-left: 50px;
+        width: 400px;
+    }
 }
-#pipp{
-    margin-left: 20px;
-    width: 300px;
+
+@media (max-width: 537px) {
+    .jewelry h1 {
+        margin-left: 50px;
+
+    }
+
+    #pip {
+        margin-left: 50px;
+        font-weight: 400;
+
+    }
+
+    #pipp {
+        margin-left: 50px;
+        width: 400px;
+    }
 }
-} 
+
+@media (max-width: 492px) {
+
+    .jewelry h1 {
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 900;
+
+    }
+
+    #pip {
+        margin-left: 20px;
+        font-weight: 400;
+
+    }
+
+    #pipp {
+        margin-left: 20px;
+        width: 300px;
+    }
+}
